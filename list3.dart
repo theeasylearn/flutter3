@@ -4,15 +4,12 @@ void main() {
   var list3 = [133, 234, 322, 53, 120]; //dynamic and mixed type
   var combined_list1 = list1 + list2 + list3;
   print(combined_list1);
-
   var another_list = [list1, list2, list3].expand((value) => value).toList();
   print(another_list);
-
   var oddlist = list1.where((element) => element % 2 != 0).toList();
   var eventlist = list1.where((element) => element % 2 == 0).toList();
   print(oddlist);
   print(eventlist);
-
   var largeoddlist = [list1, list2, list3]
       .expand((value) => value)
       .toList()
