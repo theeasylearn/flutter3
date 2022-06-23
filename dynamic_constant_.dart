@@ -1,33 +1,31 @@
 import 'dart:io';
 
 void main() {
-  dynamic value = null;
+  dynamic value = "The EasyLearn Academy";
   print(value);
 
-  value = "India";
+  value = 26;
   print(value);
 
-  value = 91;
-  print(value);
-
-  value = 3.14;
+  value = 12.7;
   print(value);
 
   value = true;
   print(value);
 
-  //final or constant variables
-  final name = "THE EASYLEARN ACADEMY";
-  print(name);
+  print("enter age");
+  value = int.parse(stdin.readLineSync().toString());
 
-  final String address = "Hill Drive, Bhavnagar";
-  print(address);
+  print(value);
 
-  const pi = 3.14; //inferred typing
-  print(pi);
+  //constant variable
+  final country = "india";
+  final int code = 91;
 
-  const double somevalue = 12.7;
-  print(somevalue);
-  // pi = 3.1417;
-  print(pi);
+  const location = 21.42; //inefferd type
+  const bool gender = true;
+
+  print("$country \n $code \n $location \n $gender");
+
+  // country = "bharat";
 }
