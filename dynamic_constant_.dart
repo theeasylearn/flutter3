@@ -1,10 +1,9 @@
-import 'dart:io';
-
 void main() {
-  dynamic value = "The EasyLearn Academy";
+  dynamic value;
+  value = "the easylearn academy";
   print(value);
 
-  value = 26;
+  value = 100;
   print(value);
 
   value = 12.7;
@@ -13,19 +12,17 @@ void main() {
   value = true;
   print(value);
 
-  print("enter age");
-  value = int.parse(stdin.readLineSync().toString());
-
-  print(value);
-
-  //constant variable
-  final country = "india";
+  final country = "India";
   final int code = 91;
 
-  const location = 21.42; //inefferd type
-  const bool gender = true;
+  const gender = true;
+  const double pi = 3.14;
 
-  print("$country \n $code \n $location \n $gender");
+  print(country);
+  print(code);
+  print(gender);
+  print(pi);
 
-  // country = "bharat";
+  pi = 1.25;
+  print(pi);
 }

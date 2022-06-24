@@ -1,18 +1,15 @@
-import 'dart:io';
+import 'dart:io'; //required to take input from user
 
 void main() {
-  print("Enter your age");
-  //variable declaration
+  print("enter age");
   int age = int.parse(stdin.readLineSync().toString());
-
   print("age = $age");
-  print("enter your weight");
+
+  print("enter weight");
   double weight = double.parse(stdin.readLineSync().toString());
-  print("your weight = $weight");
+  print("weight = $weight");
 
-  print("what is your name");
+  print("Enter your name");
   String? name = stdin.readLineSync();
-  
-  print("your name is $name");
-
+  print("name = $name");
 }
