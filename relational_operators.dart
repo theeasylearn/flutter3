@@ -1,29 +1,15 @@
-//concept of relational operators
-import 'dart:io';
-
 void main() {
-  int a, b;
-  print("Enter value for a");
-  a = int.parse(stdin.readLineSync().toString());
-
-  print("Enter value for b");
-  b = int.parse(stdin.readLineSync().toString());
-
-  var result = a < b;
-  print("a<b = $result");
-
-  result = a > b;
-  print("a>b = $result");
-
-  result = a <= b;
-  print("a<=b = $result");
-
+  int a = 20,b = 30;
+  var result = a > b; //result is boolean 
+  print("a is greater than b is $result");
+  result = a < b;
+  print("a is smaller than b is $result");
   result = a >= b;
-  print("a>=b = $result");
-
-  result = a == b;
-  print("a==b = $result");
-
-  result = a != b;
-  print("a!=b = $result");
+  print("a is greater than b is $result");
+  result = a <= b;
+  print("a is smaller than b is $result");
+  result = b == a;
+  print("a and b are equal is $result");
+  result = b != a;
+  print("a and b are not equal is $result");
 }
