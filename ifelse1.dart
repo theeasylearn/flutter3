@@ -1,6 +1,5 @@
 //write a program to findout whether shape(length,width) is square or not using given input
 import 'dart:io';
-
 void main() {
   int length, width;
   print("Enter shape's length");
