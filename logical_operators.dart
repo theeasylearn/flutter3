@@ -11,14 +11,12 @@ void main() {
   print("enter value for c");
   c = int.parse(stdin.readLineSync().toString());
 
-  var result = a < b && b < c;
-
-  print(" a < b && b < c = $result");
+  bool result = a == b && b == c;
+  print(result);
 
   result = a == b || b == c;
+  print(result);
 
-  print(" a == b || b == c = $result");
-
-  result = !(a == c);
-  print(" !(a == c) $result");
+  result = !(a == b);
+  print(result);
 }
