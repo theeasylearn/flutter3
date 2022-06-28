@@ -10,3 +10,7 @@ units           price  per unit
 >400            5
 
 also calculate 5% percentage energy charge on total bill amount & display total amount 
+
+write a program to findout largest triangle from 3 given triangle's length & base. 
+
+write a program to findout whether given year is leap year or not 
