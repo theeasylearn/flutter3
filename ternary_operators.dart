@@ -4,15 +4,15 @@ void main() {
   int age;
   print("What is your age?");
   age = int.parse(stdin.readLineSync().toString());
-
-  var message =
-      (age >= 18) ? "you are eligible to vote" : "you are not eligible to vote";
-  print(message);
-
-  String name =null;
-
-  message = name ?? "unknown";
-  message = "welcome " + message;
+  print(age);
+  String message = (age >= 18)
+      ? "you are eligible for voting"
+      : "you are not eligible for voting";
 
   print(message);
+  var ICanBeNull = null;
+  var IHaveSomeValue = "The easylearn academy";
+
+  var WhatDoIHave = ICanBeNull ?? IHaveSomeValue;
+  print(WhatDoIHave);
 }
