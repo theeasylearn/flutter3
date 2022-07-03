@@ -1,6 +1,7 @@
 import 'dart:collection';
 
 void main() {
+  //dynamic type map where key is string and value is dynamic
   Map course = {
     'name': 'Flutter',
     'duration': 120,
@@ -11,20 +12,16 @@ void main() {
   };
 
   print(course);
-  print(course.length);
-  print(course.isEmpty);
-  print(course.isNotEmpty);
+  print(course.isEmpty); //false
+  print(course.isNotEmpty); //true
+  print(course.length); //true
+  print("is teacher key exists " + course.containsKey("teacher").toString());
+  print(
+      "is Flutter value exists " + course.containsValue("Flutter").toString());
   print(course.keys);
   print(course.values);
-  print("name exists " + course.containsKey("name").toString());
-  print("syllabus exists " + course.containsKey("syllabus").toString());
-  print("flutter value exists or not " +
-      course.containsValue("Flutter").toString());
-  print(course['location']);
-  print(course['name']);
-  print(course['secret']);
+
   course.remove("secret");
   print(course);
-  course.clear();
-  print(course);
+  
 }

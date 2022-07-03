@@ -1,30 +1,25 @@
+import 'dart:io';
+
 void main() {
-  var list = [
-    'apple',
-    'ankit',
-    37,
-    true,
-    80.25,
-    364001
-  ]; //dynamic and mixed type
+  //mixed type dynamic list
+  var list = [12.7, true, "Ankit Patel", "Bhavnagar", "USA"];
   print(list);
-  print(list.isEmpty);
-  print(list.isNotEmpty);
-  print("ankit = " + list.contains('ankit').toString());
-  print("india = " + list.contains('india').toString());
-  print("first two value in list");
-  print(list.getRange(0, 2));
-  print("first 3 value in list");
-  print(list.take(3));
 
-  print(list.remove(364001));
-  print("now list has " + list.toString());
-
-  list.removeAt(0); // remove value at 0th position
-  print("after removing value at 0th position, list now list has " +
-      list.toString());
-  print("no of values in list " + list.length.toString());
-  list.clear(); //will remove all values from list
+  print("Is this list empty " + list.isEmpty.toString());
+  print("Is this list not empty " + list.isNotEmpty.toString());
+  print(" size of the list" + list.length.toString());
+  stdout.write(" first 3 value from the list ");
+  stdout.write(list.take(3).toList());
+  print("");
+  print(
+      list.getRange(1, 3).toList()); //get first and second value from the list
+  list.removeAt(4);
   print(list);
-  print("no of values in list " + list.length.toString());
+  list.removeRange(0, 2);
+  print(list);
+  list.clear();
+  print(list);
+  print(list.length);
+  list.add("Mahadev");
+  print(list);
 }
