@@ -21,5 +21,4 @@ void main() {
     count = count + 1;
   } while (count <= year);
   print("Compound interest = $total_interest");
-  
 }
