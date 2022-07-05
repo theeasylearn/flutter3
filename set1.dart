@@ -1,22 +1,18 @@
 import 'dart:collection';
 
 void main() {
-  //create set (1st method)
-  var fruits = <String>{'apple', 'banana', 'mango', 'orange', 'apple'};
-  print(fruits);
+  //create set using 1st method
+  var Fruits = <String>{'apple', 'banana', 'mango', 'orange', 'graps', 'apple'};
+  print(Fruits);
+  Fruits.add("Pinapple");
+  Fruits.add("mango");
+  print(Fruits);
 
-  //create set (2nd method)
-  Set<String> vegitables = {'potato', 'onion', 'chily', 'tomato', 'ginger'};
-  vegitables.add("lady finger");
-  vegitables.add("potato"); //will be skiped
-  print(vegitables);
+  //create list using 2nd method
+  Set<String> colors = {'red', 'green', 'blue', 'white', 'black'};
+  print(colors);
 
-  Set<String> grains = {'wheat', 'rice'};
-  grains.addAll(fruits);
-  grains.addAll(vegitables);
-
-  print(grains);
-  print(grains.length);
-  print(grains.isEmpty);
-  print(grains.isNotEmpty);
+  var OtherColors = ['red', 'pink', 'brown', 'cyan', 'magenta'];
+  colors.addAll(OtherColors);
+  print(colors);
 }
