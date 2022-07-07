@@ -26,3 +26,12 @@ write a program to print following series (hexagonal number)
 1, 6, 15, 28, 45, 66, 91, 120, 153, 190, 231 .. 1000
 
 write a program to print 1st 10 number as per  The Lazy Caterer’s Sequence
+
+function
+--------------------------------------
+1) write a program to convert given grams into kilogram using function.
+2) write a program to convert given Celsius into Fahrenheit using function.
+3) write a program to convert given amount into words using function
+    input : 123 output : one two three 
+    input : 54251 output : five four two five one 
+    
