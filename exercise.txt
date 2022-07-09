@@ -35,3 +35,9 @@ function
     input : 123 output : one two three 
     input : 54251 output : five four two five one 
     
+4) write a program that has function with position optional arguments that will calculate area of Triangle 
+5) write a program that has function with named optional arguments that will return simple interest of given amount,rate,year, rate and year can be optional  
+
+6) write a program that has function with position optional arguments that return total inch of height from given foot and optional inch 
+
+7) write a program that has function with named optional arguments return sum of foot, meter and inch as centimeter. foot and meter and inch all can be optional position arguments.
