@@ -1,6 +1,4 @@
 // #example of fixed/mixed type/empty list
-import 'dart:ffi';
-
 void main() {
   //fixed type dynamic list
   int size = 2;
