@@ -41,3 +41,13 @@ function
 6) write a program that has function with position optional arguments that return total inch of height from given foot and optional inch 
 
 7) write a program that has function with named optional arguments return sum of foot, meter and inch as centimeter. foot and meter and inch all can be optional position arguments.
+
+8) write a program that has class Duration. it has 6 instance variable  year,month,day,hour,minute,seconds. create constructor with 3 required(year,month,day) 3 optional arguments(hour,minute,seconds). use arguments to initilize instance variables. class has following methods 
+    getDays() return total days 
+    getHours() return total hours 
+    getMinute() return total minutes
+    getSeconds() return total seconds 
+
+9) write a program to has class Interest class. it has 3 instance variables. amount,rate,year. create constructor without arguments to take input from user. it has following method 
+    getInterest() return simple interest 
+
