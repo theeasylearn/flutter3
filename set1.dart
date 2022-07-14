@@ -1,18 +1,29 @@
 import 'dart:collection';
 
 void main() {
-  //create set using 1st method
-  var Fruits = <String>{'apple', 'banana', 'mango', 'orange', 'graps', 'apple'};
-  print(Fruits);
-  Fruits.add("Pinapple");
-  Fruits.add("mango");
-  print(Fruits);
+  //1st method
+  var fruits = <String>{
+    "apple",
+    "banana",
+    "mango",
+    "graps",
+    "kiwi",
+    "water melon",
+    "pinapple",
+    "apple"
+  };
 
-  //create list using 2nd method
-  Set<String> colors = {'red', 'green', 'blue', 'white', 'black'};
-  print(colors);
+  print(fruits);
+  fruits.add("cherry");
+  fruits.add("orange");
+  fruits.add("kiwi");
+  print(fruits);
 
-  var OtherColors = ['red', 'pink', 'brown', 'cyan', 'magenta'];
-  colors.addAll(OtherColors);
-  print(colors);
+  Set<String> courses = {"flutter", "php", "android", "java", "python"};
+  print(courses);
+
+  var other_courses = ["c", "c++", "asp.net","php"];
+  courses.addAll(other_courses);
+
+  print(courses);
 }
