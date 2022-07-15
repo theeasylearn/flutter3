@@ -1,11 +1,10 @@
 import 'dart:io';
-
 void main() {
-  int a, b;
+  double a, b;
   print("Enter value for a ");
-  a = int.parse(stdin.readLineSync().toString());
+  a = double.parse(stdin.readLineSync().toString());
   print("Enter value for b ");
-  b = int.parse(stdin.readLineSync().toString());
+  b = double.parse(stdin.readLineSync().toString());
   var result = a > b; //result is boolean
   print("a is greater than b is $result");
   result = a < b;
@@ -18,4 +17,5 @@ void main() {
   print("a and b are equal is $result");
   result = b != a;
   print("a and b are not equal is $result");
+  
 }
