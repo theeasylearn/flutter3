@@ -1,5 +1,4 @@
 import 'dart:io';
-
 void main() {
   int a, b, c;
   print("enter value for a");
@@ -11,7 +10,8 @@ void main() {
   print("enter value for c");
   c = int.parse(stdin.readLineSync().toString());
 
-  bool result = a == b && b == c;
+  var result = a == b &&
+      b == c; //both expression must be true then only result will be true
   print(result);
 
   result = a == b || b == c;
