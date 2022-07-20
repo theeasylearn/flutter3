@@ -1,16 +1,17 @@
 // #example of lambda function
 import 'dart:io';
 
-void p(var msg) => print(msg);
-double GetPi() => 3.14;
-double GetSquare(double number) => number * number;
+void p(dynamic message) => print(message);
+double pi() => 3.14;
+int getSquare(int number) => number * number;
+double getArea(int radius) => pi() * getSquare(radius);
 void main() {
-  p("Good Morning");
+  p("Bhavnagar");
+  p("Ankit Patel, The Easylearn Academy");
   p(100);
   p(3.14);
-  p(true);
-  p(GetPi());
-  p("Enter number");
-  double number = double.parse(stdin.readLineSync().toString());
-  p(GetSquare(number));
+  p("Enter radius");
+  int radius = int.parse(stdin.readLineSync().toString());
+  double area = getArea(radius);
+  p(area);
 }
