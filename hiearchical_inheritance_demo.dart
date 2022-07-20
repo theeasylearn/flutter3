@@ -1,4 +1,3 @@
-//conceptual example of single level inheritance
 class Person {
   void walk() {
     print("I can walk");

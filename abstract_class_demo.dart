@@ -1,9 +1,13 @@
 // example of abstract class and hiearchical inheritance
 import 'dart:io';
+
 abstract class Shape {
   double pi = 3.14;
   double getArea(); //abtract method , it has no code
   void display(); //abstract method, it has no code
+  void Greetings() {
+    print("Good Morning....");
+  }
 }
 
 class Circle extends Shape {
