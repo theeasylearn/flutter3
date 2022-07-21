@@ -1,8 +1,8 @@
 void main() {
-  var numbers = [10, 25, 78, 98, 125, 74, 11, 25, 118,789,1254];
+  var numbers = [25, 1, 89, 150, 65, 22, 37, 49,789,1165];
   int sum = 0;
   numbers.forEach((element) {
-    sum += element;
+    sum = sum + element;
   });
   print(sum);
 }
