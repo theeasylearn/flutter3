@@ -51,3 +51,67 @@ function
 9) write a program to has class Interest class. it has 3 instance variables. amount,rate,year. create constructor without arguments to take input from user. it has following method 
     getInterest() return simple interest 
 
+function exercise 
+------------------------------
+1) create function that convert return given ceilcius into farenheit
+2) create function that count & return how many vowels are there in given string
+3) create function that count & return how many words are there in given string
+4) create function that findout & return GCD from given two number 
+5) create function that findout & return LCD from given two number 
+6) create function that calculate & return total taxi fare base upon given price per km and km of travel. if km is above 20 then 5% discount should be given taxi fare 
+
+oop exercise
+----------------------------------------
+1) create class BmiCalculator using constructor, instance variables
+this class should have method getBMI() Which return BMI
+
+2) create class MathCalculator using constructor, instance variables for two numbers
+this class should have method following methods 
+
+addition
+substraction
+division
+multiplication 
+above method should return result of operations.
+
+
+inheritance 
+--------------------------
+
+1 create single level inheritance example which has two class 
+    1) kg class 
+        has constructor for grams 
+        has method getKg which return kg of grams 
+    2) Ton class  inherit kg class 
+        has constructor for grams which call parent class constructor
+        has method getTon() which return Ton of grams 
+
+2 create single level inheritance example which has two class 
+    1) KB class 
+        has constructor for bytes 
+        has method getKb which return kb of bytes 
+    2) MB class  inherit KB class 
+        has constructor for bytes which call parent class constructor
+        has method getMb() which return mb of bytes 
+
+3 create multilevel inheritance example which has two class 
+    1) KB class 
+        has constructor for bytes 
+        has method getKb which return kb of bytes 
+    2) MB class  inherit KB class 
+        has constructor for bytes which call parent class constructor
+        has method getMb() which return mb of bytes
+    3) GB class  inherit MB class 
+        has constructor for bytes which call parent class constructor
+        has method getGB() which return gb of bytes 
+
+4 create multilevel inheritance example which has two class 
+    1) kg class 
+        has constructor for grams 
+        has method getKg which return kg of grams 
+    2) Ton class  inherit kg class 
+        has constructor for grams which call parent class constructor
+        has method getTon() which return Ton of grams
+    3) MetricTon class  inherit kg class 
+        has constructor for grams which call parent class constructor
+        has method getMTC() which return MetricTon of grams
