@@ -1,5 +1,4 @@
 import 'dart:io';
-
 // concept of optional positional arguments
 int getArea(int width, [int length = 0]) {
   if (length != 0)
