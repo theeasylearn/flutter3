@@ -1,51 +1,34 @@
-// concept of class and object
-//syntax to create class
-//class classname
-//{
-// variables
-//methods
-//}
-import 'dart:io';
-
-class Student {
-  //declare instance variables
-  int rollno = 0;
-  String? fullname = '';
-  bool gender = false;
-  double weight = 0.0;
-
-  //create constructor (that will be called automatically when we create object of Student class)
-  //without arguments 
-  Student() {
-    print("enter student rollno :- ");
-    this.rollno = int.parse(stdin.readLineSync().toString());
-
-    print("enter fullname");
-    this.fullname = stdin.readLineSync();
-
-    print("Press 1 for male press 0 for female");
-    //value is local variable
-    int value = int.parse(stdin.readLineSync().toString());
-    // ternary operator
-    this.gender = (value == 1) ? true : false;
-
-    print("enter weight");
-    this.weight = double.parse(stdin.readLineSync().toString());
+class Triangle {
+  //instance variable
+  int height = 0, base = 0;
+  //contuctor
+  Triangle(int h, [int b = 1]) {
+    print("Triangle class constructor called....");
+    height = h;
+    base = b;
   }
-  //methods
+  double getArea() {
+    double area; //local variable
+    area = height * base * 0.5;
+    return area;
+  }
+
   void display() {
-    print("Roll No " + this.rollno.toString());
-    print("fullname " + this.fullname!);
-    print("gender " + this.gender.toString());
-    print("weight " + this.weight.toString());
+    print("Height = " + height.toString());
+    print("Base = " + base.toString());
   }
 }
 
 void main() {
-  //create class type variable (object)
-  //class object = new class()
-  Student darshan = new Student(); //it means constructor will execute 
-  darshan.display();
-  Student om = new Student(); //it means constructor will execute
-  om.display();
+  //create object
+  //classname object = new classname()
+  Triangle t1 = new Triangle(10, 20); //it will conctructor
+  double area = t1.getArea();
+  print("area = $area");
+  t1.display();
+
+  Triangle t2 = new Triangle(10);
+  area = t2.getArea();
+  print("area =  $area");
+  t2.display();
 }
