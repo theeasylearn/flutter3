@@ -1,36 +1,56 @@
 import 'dart:io';
 
-class Triangle {
-  int _height = 0, _base = 0;
-  set Height(int h) {
-    if (h < 0) {
-      h = 0 - h;
-    }
-    _height = h;
+class SimpleInterest {
+  int _amount = 0, _year = 0;
+  double _rate = 0.0;
+  //getter
+  int get amount {
+    return _amount;
   }
 
-  set Base(int b) {
-    if (b < 0) {
-      b = 0 - b;
-    }
-    _base = b;
+  int get year {
+    return _year;
   }
 
-  double getArea() {
-    return _height * _base * 0.5;
+  double get rate {
+    return _rate;
+  }
+
+  //setter
+  set amount(int amount) {
+    if (amount < 0) amount = -amount;
+    _amount = amount;
+  }
+
+  set year(int year) {
+    if (year < 0) year = -year;
+    _year = year;
+  }
+
+  set rate(double rate) {
+    if (rate < 0) rate = -rate;
+    _rate = rate;
+  }
+
+  double getInterest() {
+    double interest = 0.0; //local variable
+    interest = (amount * rate * year) / 100;
+    return interest;
   }
 }
 
 void main() {
-  //create Triangle's class object
-  //classname object-name = classname()
-  Triangle t1 = new Triangle();
-  print("enter base");
-  t1.Base = int.parse(stdin.readLineSync().toString()); //calling setter method
+  SimpleInterest s1 = new SimpleInterest();
+  print("Enter amount");
+  s1.amount = int.parse(stdin.readLineSync().toString()); //setter will execute
+    print("Enter rate");
+  s1.rate = double.parse(stdin.readLineSync().toString()); //setter will execute
+    print("Enter year");
+  s1.year = int.parse(stdin.readLineSync().toString()); //setter will execute
+  print(" amount =" + s1.amount.toString()); //getter will execute
+  print(" rate =" + s1.rate.toString()); //getter will execute
+  print(" year =" + s1.year.toString()); //getter will execute
 
-  print("enter height");
-  t1.Height = int.parse(stdin.readLineSync().toString()); //calling setter method
-
-  double area = t1.getArea();
-  print("area of triangle = $area");
+  double interest = s1.getInterest();
+  print(interest);
 }
