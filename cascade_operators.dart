@@ -3,7 +3,7 @@ import 'dart:io';
 //create class
 class Area {
   var length, width;
-  void set(l, w) {
+  void setlw(l, w) {
     print("set method called....");
     this.length = l;
     this.width = w;
@@ -25,7 +25,7 @@ void main() {
 
   //var object = new classname()
   var a1 = new Area();
-  a1.set(l, w);
+  a1.setlw(l, w);
   a1.getArea();
 
   print("Enter length value");
@@ -37,6 +37,5 @@ void main() {
   //var object = new classname()
   var a2 = new Area();
 
-  a2..set(l, w)..getArea();
-
+  a2..setlw(l, w)..getArea();
 }

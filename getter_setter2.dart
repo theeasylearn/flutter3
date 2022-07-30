@@ -1,10 +1,9 @@
 import 'dart:io';
-
 class Person {
-  String? _FirstName, _LastName;
+  String? _FirstName, _LastName; //private instance variable 
   set FirstName(String fn) {
-    //aNKIT
-    //01234
+    //ankit patel => Ankit patel 
+    //ankit => Ankit
     _FirstName =
         fn.substring(0, 1).toUpperCase() + fn.substring(1).toLowerCase();
   }
@@ -29,9 +28,7 @@ void main() {
   Person p1 = new Person();
   print("Enter your name");
   p1.FirstName = stdin.readLineSync().toString();
-
   print("Enter your surname");
   p1.LastName = stdin.readLineSync().toString();
-
   print(p1.FirstName + " " + p1.LastName); //will call getter
 }
