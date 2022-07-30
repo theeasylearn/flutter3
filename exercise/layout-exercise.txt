@@ -1,0 +1,5 @@
+1) create 2 flutter app example to display text in center using Text Widget With Center Widget & Without Center Widget. Root of the build must be Container. 
+
+2) create 2 flutter app example to display futter logo at the top right corner With and without using Align widget. Root of the build must be Container. 
+
+
