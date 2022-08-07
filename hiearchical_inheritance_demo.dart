@@ -27,11 +27,11 @@ class Student extends Person {
 
 class Teacher extends Person {
   void teach() {
-    print("I can teach");
+    print("I can teach....");
   }
 
   void help() {
-    print("I can help");
+    print("I can help....");
   }
 
   void WhatICanDo() {

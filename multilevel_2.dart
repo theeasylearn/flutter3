@@ -22,9 +22,9 @@ class Meter extends Foot {
 
 class KM extends Meter {
   double getKM(int inches) {
-    double result = super.getMeter(inches);
-    result = result / 1000;
-    return result;
+    double meter = super.getMeter(inches);
+    double temp = meter / 1000;
+    return temp;
   }
 }
 
@@ -33,7 +33,12 @@ void main() {
   print("Enter inches");
   int inches = int.parse(stdin.readLineSync().toString());
 
-  double result = k1.getKM(inches);
-  print("$result is km of given $inches");
+  double totalkm = k1.getKM(inches);
+  print("$totalkm is km of given $inches");
 
+  double meter = k1.getMeter(inches);
+  print("$meter is meter of given $inches");
+
+  double foot = k1.getFoot(inches);
+  print("$foot is foot of given $inches");
 }

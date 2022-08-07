@@ -3,15 +3,15 @@ import 'dart:io';
 
 class Foot {
   double getFoot(int inch) {
-    double temp = inch / 12;
+    double temp = inch / 12; //temp local variable
     return temp;
   }
 }
 
 class Meter extends Foot {
   double getMeter(int inch) {
-    double temp = super.getFoot(inch); // foot
-    temp = temp / 3.28;
+    double foot = super.getFoot(inch);
+    double temp = foot / 3.28;
     return temp;
   }
 }

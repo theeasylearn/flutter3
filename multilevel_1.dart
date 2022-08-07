@@ -28,16 +28,15 @@ class Student extends Person {
 
 class Developer extends Student {
   void code() {
-    print("I can code...");
+    print("I can write code in dart language");
   }
 
   void debug() {
-    print("I can debug....");
+    print("I can debug dart code....");
   }
 
-  // method overridding
   void WhatICanDo() {
-    super.WhatICanDo(); //calling parent class method
+    super.WhatICanDo();
     this.code();
     this.debug();
   }

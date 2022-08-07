@@ -1,10 +1,7 @@
-//single level inheritance
-
-//base/super/parent class
+//example of single level inheritance
 class Person {
-  //methods
   void walk() {
-    print("i can walk");
+    print("I can walk");
   }
 
   void talk() {
@@ -12,26 +9,27 @@ class Person {
   }
 }
 
-//sub/child/derived class
 class Student extends Person {
   void read() {
-    print("I can read...");
+    print("I can read");
   }
 
   void write() {
-    print("I can write...");
+    print("I can write");
   }
 
-  void WhatCanIDo() {
+  void WhatICanDo() {
     super.walk();
     super.talk();
-    read();
-    write();
+    this.read();
+    this.write();
   }
 }
 
 void main() {
-  //classname object = new classname()
-  Student s1 = new Student();
-  s1.WhatCanIDo();
+  Student s1 = Student();
+  s1.WhatICanDo();
+
+  s1.walk();
+  s1.talk();
 }
