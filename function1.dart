@@ -41,8 +41,8 @@ double GetPi() {
 }
 
 void main() {
-  GreetingMessage();
-  PrintLine('@', 100);
+  GreetingMessage(); //5 seconds
+  PrintLine('@', 100); //3 seconds
   print("Enter number");
   int value = int.parse(stdin.readLineSync().toString());
 
