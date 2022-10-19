@@ -1,34 +1,27 @@
 class SingleTon {
   static SingleTon? _instance;
-  //private constructor
-  SingleTon._() {
-    print("private constructor called....");
-  }
-  static SingleTon get instance => _instance ??= SingleTon._();
-
+  SingleTon._(); //pr ivate constructor
+  static SingleTon get getinstance => _instance ??= SingleTon._();
+  
   String name = "THE EASYLEARN ACADEMY";
   String getName() {
     return name;
   }
 
-  void setName(name) {
+  void setName(String name) {
     this.name = name;
   }
 }
 
 void main() {
-  SingleTon s1 = SingleTon.instance;
-  s1.setName("TEL");
+  SingleTon s1 = SingleTon.getinstance;
+  SingleTon s2 = SingleTon.getinstance;
+  
+  s1.setName("T E L");
+  print("s1 " + s1.getName());
+  print("s2 " + s2.getName());
 
-  SingleTon s2 = SingleTon.instance;
-  SingleTon s3 = SingleTon.instance;
   s2.setName("EASYLEARN");
-
-  print(s1.getName());
-  print(s2.getName());
-
-  s3.setName("the easylearn international");
-  print(s3.getName());
-  print(s1.getName());
-  print(s2.getName());
+  print("s1 " + s1.getName());
+  print("s2 " + s2.getName());
 }
